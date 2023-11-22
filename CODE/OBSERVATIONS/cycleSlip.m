@@ -22,7 +22,7 @@ if contains(settings.PROC.method, 'Phase')  % except code only solution
     % --- ||| check cs detection based on HMW LC
     % https://link.springer.com/article/10.1007/s11018-019-01639-5?shared-article-renderer
     
-    % --- single-frequency cycle-slip detection 
+    % --- single-frequency cycle-slip detection  单频周跳探测-LC方法
     if settings.OTHER.CS.l1c1
         Epoch = cycleSlip_CLdiff(settings, Epoch, use_column);
     end   
